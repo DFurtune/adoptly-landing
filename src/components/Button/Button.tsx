@@ -5,30 +5,43 @@ import './Button.css';
 
 type ButtonVariant = 'primary' | 'secondary';
 
-interface ButtonProps {
+interface CommonProps {
   children: ReactNode;
-  onClick?: MouseEventHandler<HTMLButtonElement>;
   variant?: ButtonVariant;
   maxWidth?: string | number;
   maxWidthMobile?: string | number;
   height?: string | number;
   heightMobile?: string | number;
   style?: React.CSSProperties;
-  type?: 'button' | 'submit';
 }
+
+type ButtonOnlyProps = {
+  as?: 'button';
+  type?: 'button' | 'submit';
+  onClick?: MouseEventHandler<HTMLButtonElement>;
+} & React.ButtonHTMLAttributes<HTMLButtonElement>;
+
+type AnchorOnlyProps = {
+  as: 'a';
+  href: string;
+  onClick?: MouseEventHandler<HTMLAnchorElement>;
+} & React.AnchorHTMLAttributes<HTMLAnchorElement>;
+
+type ButtonProps = CommonProps & (ButtonOnlyProps | AnchorOnlyProps);
 
 const toPx = (v?: number | string) => (typeof v === 'number' ? `${v}px` : v);
 
 const Button: React.FC<ButtonProps> = ({
   children,
-  onClick,
   variant = 'primary',
   maxWidth,
   maxWidthMobile,
   height,
   heightMobile,
   style,
-  type = 'button',
+  as = 'button',
+  onClick,
+  ...rest
 }) => {
   const cssVars = {
     '--btn-max-width': toPx(maxWidth) ?? undefined,
@@ -37,12 +50,34 @@ const Button: React.FC<ButtonProps> = ({
     '--btn-height-mobile': toPx(heightMobile) ?? undefined,
   } as Record<string, string | undefined>;
 
+  const className = `button button--${variant}`;
+
+  if (as === 'a') {
+    return (
+      <a
+        className={className}
+        style={{ ...cssVars, ...style }}
+        onClick={
+          onClick as React.MouseEventHandler<HTMLAnchorElement> | undefined
+        }
+        {...(rest as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
+      >
+        {children}
+      </a>
+    );
+  }
+
   return (
     <button
-      type={type}
-      onClick={onClick}
-      className={`button button--${variant}`}
+      type={
+        (rest as React.ButtonHTMLAttributes<HTMLButtonElement>).type ?? 'button'
+      }
+      onClick={
+        onClick as React.MouseEventHandler<HTMLButtonElement> | undefined
+      }
+      className={className}
       style={{ ...cssVars, ...style }}
+      {...(rest as React.ButtonHTMLAttributes<HTMLButtonElement>)}
     >
       {children}
     </button>
