@@ -27,7 +27,8 @@ const HeroSection = () => {
             maxWidth={248.5}
             maxWidthMobile={220}
             height={64}
-            onClick={() => alert('Кнопка "Знайти улюбленця" натиснута!')}
+            as="a"
+            href="#shelters"
           >
             {t('hero.findPet')}
           </Button>
@@ -36,7 +37,10 @@ const HeroSection = () => {
             maxWidth={248.5}
             maxWidthMobile={220}
             height={64}
-            onClick={() => alert('Кнопка "Задонатити" натиснута!')}
+            as="a"
+            href="https://www.google.com/url?q=https://forms.gle/GDBdqDkLJA7cg2DUA&sa=D&source=docs&ust=1766317304984797&usg=AOvVaw27tjQDxSQN90QP2ynPhL_8"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             {t('hero.donate')}
           </Button>
