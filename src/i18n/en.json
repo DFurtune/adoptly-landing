@@ -14,5 +14,20 @@
     "subtitle": "A modern digital platform transforming the pet adoption experience",
     "forShelters": "For Shelters",
     "becomePartner": "Become a partner"
+  },
+  "ourNumbers": {
+    "title": "About us",
+    "cards": {
+      "title": {
+        "1": "Single goal",
+        "2": "Year of launch",
+        "3": "Volunteering"
+      },
+      "description": {
+        "1": "helping with pet adoptions",
+        "2": "planned MVP release",
+        "3": "a non-profit initiative"
+      }
+    }
   }
 }

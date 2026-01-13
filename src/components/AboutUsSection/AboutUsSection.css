@@ -1,0 +1,22 @@
+:root {
+  --background-color: #ecf1ff;
+  --spacing-large: 100px;
+  --font-size-title: 64px;
+  --font-size-body: 18px;
+  --title-color: #0a0c20;
+}
+
+.our-skills-in-numbers {
+  background-color: var(--background-color);
+  border-radius: 44px;
+  padding: var(--spacing-large) 0;
+  margin: 54px 0;
+}
+
+.our-skills-in-numbers h2 {
+  text-align: center;
+  font-weight: 800;
+  font-size: var(--font-size-title);
+  line-height: 1.2;
+  color: var(--title-color);
+}
