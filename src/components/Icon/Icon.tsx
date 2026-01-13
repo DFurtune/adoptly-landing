@@ -9,7 +9,7 @@ type IconProps = {
 export const Icon: React.FC<IconProps> = ({ id, className, size, height }) => {
   return (
     <svg className={className} height={height} width={size}>
-      <use href={`${import.meta.env.BASE_URL}svg/sprite.svg#${id}`}></use>
+      <use href={`svg/sprite.svg#${id}`}></use>
     </svg>
   );
 };
