@@ -1,19 +1,41 @@
 import './WayCard.css';
-import startWay from '../../assets/images/OurWay/start-icon.webp';
+import React from 'react';
 
-const WayCard = () => {
+interface WayCardProps {
+  cardImageSrc: string;
+  cardImgAlt?: string;
+  cardNumber: string;
+  cardDate: string;
+  cardTitle: string;
+  cardDescription: string;
+}
+
+const WayCard: React.FC<WayCardProps> = ({
+  cardImageSrc,
+  cardImgAlt,
+  cardNumber,
+  cardDate,
+  cardTitle,
+  cardDescription,
+}) => {
   return (
     <div className="timeline-item">
       <div className="timeline-number">
-        <img src={startWay} alt="Image 1" />
-        <span>01</span>
+        <img
+          src={cardImageSrc}
+          alt={cardImgAlt || 'Way card image'}
+          loading="lazy"
+          decoding="async"
+        />
+        <span>{cardNumber}</span>
       </div>
       <div className="timeline-info">
-        <span>Липень 2025</span>
-        <h4>Старт ініціативи</h4>
-        <p>Збір команди на Team Challenge та визначення місії проєкту. </p>
+        <span>{cardDate}</span>
+        <h4>{cardTitle}</h4>
+        <p>{cardDescription}</p>
       </div>
     </div>
   );
 };
+
 export default WayCard;
