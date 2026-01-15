@@ -1,0 +1,45 @@
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: #ebf2ff;
+  max-width: 333px;
+  padding: 32px;
+  border-radius: 44px;
+}
+
+.timeline-number {
+  display: flex;
+  gap: 119px;
+  align-items: center;
+}
+
+.timeline-item p {
+  color: var(--text-color);
+}
+
+.timeline-number span {
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #c8d3ff;
+}
+
+.timeline-number img {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.timeline-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.timeline-info span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #17a34a;
+  text-transform: uppercase;
+}
