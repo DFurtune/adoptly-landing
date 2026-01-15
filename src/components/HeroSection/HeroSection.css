@@ -1,9 +1,4 @@
 .hero {
-  --title-color: #091a49;
-  --text-color: #091a49cc;
-}
-
-.hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   background-color: #ecf1ff;
