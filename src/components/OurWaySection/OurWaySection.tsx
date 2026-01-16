@@ -19,6 +19,7 @@ const OurWaySection = () => {
             cardDate={milestone.cardDate}
             cardTitle={milestone.cardTitle}
             cardDescription={milestone.cardDescription}
+            isActive={milestone.isActive}
           />
         ))}
       </div>

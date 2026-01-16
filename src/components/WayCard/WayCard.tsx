@@ -8,6 +8,7 @@ interface WayCardProps {
   cardDate: string;
   cardTitle: string;
   cardDescription: string;
+  isActive: boolean;
 }
 
 const WayCard: React.FC<WayCardProps> = ({
@@ -17,9 +18,11 @@ const WayCard: React.FC<WayCardProps> = ({
   cardDate,
   cardTitle,
   cardDescription,
+  isActive,
 }) => {
   return (
-    <div className="timeline-item">
+    <div className={`timeline-item ${isActive ? 'active-card' : ''}`}>
+      {isActive && <div className="active-badge">Зараз</div>}
       <div className="timeline-number">
         <img
           src={cardImageSrc}
