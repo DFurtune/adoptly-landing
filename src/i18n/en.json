@@ -29,5 +29,13 @@
         "3": "a non-profit initiative"
       }
     }
+  },
+  "HowItAllBegan": {
+    "title": "How did it all begin?",
+    "subtitle": "Born on Team Challenge",
+    "paragraphs": {
+      "1": "In July 2025, we came together to use our professional skills for a social project. We believe that the Adoptly platform will make pet adoption simple, transparent, and accessible.",
+      "2": " The core team was formed on the Team Challenge platform – where engineers, designers, QA, and managers find partners for their first meaningful projects."
+    }
   }
 }

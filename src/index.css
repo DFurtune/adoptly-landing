@@ -6,8 +6,10 @@
   --font-tertiary: 'Montserrat', sans-serif;
   --font-special: 'Baloo Chettan', sans-serif;
   --container-padding: 40px;
+  --title-color: #091a49;
+  --text-color: #091a49cc;
 
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
   line-height: 1.5;
   font-weight: 400;
   text-rendering: optimizeLegibility;
@@ -46,6 +48,20 @@ h1 {
   font-size: 3.2rem;
   line-height: 1.1;
   margin: 0;
+  color: var(--title-color);
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--title-color);
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--title-color);
 }
 
 img {
