@@ -10,7 +10,7 @@ const HeroSection = () => {
 
   return (
     <section
-      className="hero container"
+      className="hero"
       role="region"
       aria-label="Знайди друга врятуй життя"
     >

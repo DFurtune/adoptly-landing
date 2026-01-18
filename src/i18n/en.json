@@ -1,4 +1,14 @@
 {
+  "header": {
+    "btn": "Contact us"
+  },
+  "nav": {
+    "aboutus": "About us",
+    "ourStory": "Story",
+    "roadmap": "Roadmap",
+    "team": "Team",
+    "shelters": "For Shelters"
+  },
   "hero": {
     "title": "Find a Friend<br/>Save a Life",
     "subtitle": "A modern digital platform transforming the pet adoption experience",
