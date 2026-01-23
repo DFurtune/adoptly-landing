@@ -1,5 +1,7 @@
 import Button from '../Button/Button';
 import sheltersAccountImg from '../../assets/images/ForShelters/shelters-account.webp';
+import iconCheck from '../../assets/images/ForShelters/icon-check.webp';
+import iconShare from '../../assets/images/ForShelters/icon-share.webp';
 import './ForShelters.css';
 
 const ForShelters = () => {
@@ -14,9 +16,23 @@ const ForShelters = () => {
         </p>
         <ul className="questions-list">
           <li className="question">
+            <img
+              src={iconCheck}
+              alt="icon check"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+            />
             <p>Скільки часу витрачаєте на створення картки?</p>
           </li>
           <li className="question">
+            <img
+              src={iconCheck}
+              alt="icon check"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+            />
             <p>Чи готові ви з нами співпрацювати?</p>
           </li>
         </ul>
@@ -29,7 +45,14 @@ const ForShelters = () => {
             backgroundColor: '#1E293B',
           }}
         >
-          Пройти опитування (3 хв)
+          Пройти опитування (3 хв){' '}
+          <img
+            src={iconShare}
+            alt="icon share"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+          />
         </Button>
       </div>
       <div className="right">
