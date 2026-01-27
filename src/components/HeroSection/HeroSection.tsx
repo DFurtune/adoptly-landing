@@ -15,8 +15,12 @@ const HeroSection = () => {
       aria-label="Знайди друга врятуй життя"
     >
       <div className="text-and-buttons">
+        <span className="label">
+          <div className="circle"></div>IT-ВОЛОНТЕРСЬКА ІНІЦІАТИВА
+        </span>
         <h1 role="heading" aria-level={1}>
           <Trans i18nKey="hero.title" />
+          <span className="highlight">{t('hero.highlightedText')}</span>
         </h1>
         <p>
           <Trans i18nKey="hero.subtitle" />
