@@ -19,6 +19,7 @@ const NumberCard: React.FC<NumberCardProps> = ({
       ) : (
         <h3 className="number-card__number">—</h3>
       )}
+      <span className="number-card__divider" />
       <div className="number-card__text">
         {<span className="number-card__title">{cardTitle}</span>}
         {cardDescription}
