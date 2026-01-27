@@ -4,6 +4,7 @@ import AboutUsSection from './components/AboutUsSection/AboutUsSection';
 import HowItAllBeganSection from './components/HowItAllBeganSection/HowItAllBeganSection';
 import WhoCreatesAdoptly from './components/WhoCreatesAdoptly/WhoCreatesAdoptly';
 import OurWaySection from './components/OurWaySection/OurWaySection';
+import ForShelters from './components/ForShelters/ForShelters';
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
         <HeroSection />
         <AboutUsSection />
         <HowItAllBeganSection />
-        <WhoCreatesAdoptly />
         <OurWaySection />
+        <WhoCreatesAdoptly />
+        <ForShelters />
       </main>
     </>
   );
