@@ -10,7 +10,9 @@
     "shelters": "For Shelters"
   },
   "hero": {
-    "title": "Find a Friend<br/>Save a Life",
+    "title": "Find a Friend<br/>",
+    "highlightedText": "Save a Life",
+    "label": "IT-VOLUNTEER INITIATIVE",
     "subtitle": "A modern digital platform transforming the pet adoption experience",
     "forShelters": "For Shelters",
     "becomePartner": "Become a partner"

@@ -3,6 +3,8 @@
   height: 94px;
   box-shadow: 0 2px 4px 0 rgba(81, 81, 81, 0.16);
   background: #fff;
+  position: fixed;
+  z-index: 100;
 }
 .header_inner {
   display: flex;
