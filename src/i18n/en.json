@@ -44,5 +44,10 @@
     "title": "Who creates Adoptly?",
     "description": "A team of volunteers united by a shared mission.",
     "button": "Join the team"
+  },
+  "supportUs": {
+    "title": "Ready to support our project?",
+    "description": "We are open to partnerships with shelters, media, and experts. Let’s do good together!",
+    "email": "Write us"
   }
 }

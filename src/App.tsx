@@ -5,6 +5,7 @@ import HowItAllBeganSection from './components/HowItAllBeganSection/HowItAllBega
 import WhoCreatesAdoptly from './components/WhoCreatesAdoptly/WhoCreatesAdoptly';
 import OurWaySection from './components/OurWaySection/OurWaySection';
 import ForShelters from './components/ForShelters/ForShelters';
+import SupportUs from './components/SupportUS/SupportUs';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <OurWaySection />
         <WhoCreatesAdoptly />
         <ForShelters />
+        <SupportUs />
       </main>
     </>
   );
